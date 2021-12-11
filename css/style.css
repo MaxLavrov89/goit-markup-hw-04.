@@ -45,6 +45,7 @@
     justify-content: space-between;
     align-items: center;
   }
+  /* HEADER */
   header {
     border-bottom: 1px solid #ececec;
   }
@@ -102,13 +103,35 @@
   }
   .contacts li:first-child a {
     margin-left: auto;
-  }
+}
+.mail::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/envelope.png");
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+.telefon::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/vector.png");
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+  /* HERO-BLOCK */
   .hero {
     max-width: 1600px;
     max-height: 600px;
     padding: 200px 0;
-    background-color: #2f303a;
+   
     margin: 0 auto;
+    outline: 1px solid black;
+    background-image:linear-gradient(rgba(25,28,38,0.2),rgba(25,28,38,0.2)) ,url(../images/img-hero.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-color: #757575;
   }
   .hero-title {
     font-weight: 900;
@@ -152,6 +175,58 @@
     text-transform: uppercase;
     margin-bottom: 10px;
   }
+  .section-item>.radar::before {
+    content: "";
+    display: block;
+    background-image:url(../images/radar.svg);
+    width: 270px;
+    height: 120px;
+    background-size: 70px;
+    background-repeat:no-repeat;
+    background-position: center;
+    
+    background-color: #F5F4FA;
+    margin-bottom: 50px;
+  }
+  .section-item>.clock::before{
+    content: "";
+    display: block;
+    background-image:url(../images/clock.svg);
+    width: 270px;
+    height: 120px;
+    background-size: 70px;
+    background-repeat:no-repeat;
+    background-position: center;
+    
+    background-color: #F5F4FA;
+    margin-bottom: 50px;
+  }
+  .section-item>.computer::before{
+    content: "";
+    display: block;
+    background-image:url(../images/computer.svg);
+    width: 270px;
+    height: 120px;
+    background-size: 70px;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    margin-bottom: 50px;
+  }
+  .section-item>.astronaut::before{
+    content: "";
+    display: block;
+    background-image:url(../images/astronaut.svg);
+    width: 270px;
+    height: 120px;
+    background-size: 70px;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    margin-bottom: 50px;
+    ;
+  }
+
   .section-button {
     font-weight: 500;
     font-size: 16px;
@@ -164,9 +239,12 @@
     background: #f5f4fa;
     border-radius: 4px;
   }
-  .section-button:hover {
+  .section-button:hover,
+  .section-button:focus {
     color: #ffffff;
     background: var(--act-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0, 0.2);
   }
   .section {
     padding: 94px 0;
@@ -213,6 +291,16 @@
   .team-workers {
     margin-bottom: 30px;
   }
+  .sprite-icon  {
+    width: 20px;
+    height: 20px;
+    fill: #303030;
+    display: inline-flex;
+    margin-right: 24px;
+  }
+  .sprite-icon:hover {
+    fill: #1c8be6;
+  }
   .container {
     padding: 0 15px;
     width: 1200px;
@@ -227,7 +315,9 @@
     overflow: hidden;
     margin-top: -1px;
   }
-  .box {
+
+  /* Portfolio */
+  .portfolio-nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -278,15 +368,37 @@
     color: rgba(255, 255, 255, 0.6);
   }
   .contacts-footer {
+    
     padding: 0px;
   }
+  /* Клиенты*/
+  .team-title-clients{
+  font-weight: bold;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    padding-top:50px ;
+    padding-bottom: 50px;
+  }
+  .clients{
+    display: inline-flex;
+    justify-content: space-between;
+
+}
+.clients-first {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid gray;
+  background-image: url(.);
+}
   .footer {
     background-color: #2f303a;
     padding: 60px 0;
     max-height: 252px;
     max-width: 100%;
   }
-  footer.join-us.footer-icon {
+  .footer-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -295,27 +407,20 @@
     height: 20px;
     margin-right: 24px;
   }
+.footer-icon:hover {
+  fill: #1c8be6;
+}
   .adress > p {
     color: #ffffff;
   }
-  .sprite-icon  {
-    width: 20px;
-    height: 20px;
-    fill: #303030;
-    display: inline-flex;
-    margin-right: 24px;
-  }
-    .join-us h3 {
+
+    .join-us  {
       text-align: center;
-      display: block;
-      color: #ffffff;
-      margin-top: auto;
-      margin-bottom: auto;
-    }
-   
-    .join-us> .footer-icon {
-      
       display: flex;
+      color: #ffffff;
       align-items: center;
-      justify-content: center;
+      
     }
+  
+   
+   
