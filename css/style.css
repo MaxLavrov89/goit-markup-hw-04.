@@ -106,16 +106,21 @@
   margin-right: 10px;
   width: 16px;
   height: 12px;
-
+  stroke: #757575;
+  stroke-width: 3px;
 }
 .sprite-icon-phone {
   margin-left:30px;
   margin-right: 10px;
   width: 10px;
   height: 16px;
-
 }
-
+.sprite-icon-envelope:hover{
+ stroke: #1c8be6;
+}
+.sprite-icon-phone:hover {
+  stroke: #1c8be6
+}
   /* HERO-BLOCK */
   .hero {
     max-width: 1600px;
@@ -252,7 +257,7 @@
   .sprite-icon  {
     width: 20px;
     height: 20px;
-    fill: #303030;
+    fill: #AFB1B8;
     display: inline-flex;
     margin-right: 24px;
   }
@@ -321,8 +326,8 @@
     margin-left: 24px;
     margin-top: 20px;
   }
-  .card-shadow:hover {
-    box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.75);;
+  .card-images:hover {
+    box-shadow: 5px 5px 5px 0px rgba(150,150,150,0.75);
   }
   /* Клиенты*/
   .team-title-clients{
