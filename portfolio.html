@@ -29,7 +29,15 @@
 
             </nav>
             <ul class="contacts">
-                <li><a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li >
+                    <svg class="sprite-icon-envelope">
+                        <use href='./images/sprite-next.svg#icon-envelope'></use>
+                    </svg></li>
+                    <li><a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li >
+                    <svg class="sprite-icon-phone">
+                         <use href='./images/sprite-next.svg#icon-phone'></use>
+                    </svg></li>
                 <li><a class="telefon" href="tel:+380961111111">+380961111111</a></li>
             </ul>
         </div>
@@ -56,7 +64,7 @@
                     <li class="card-images">
                         <article class="card">
                            <div class="card-thumb">
-                            <img src="./images/pic1.jpg" alt="img" width="370" height="294">
+                            <img class="card-shadow" src="./images/pic1.jpg" alt="img" width="370" height="294">
                           </div>
                          <div class="card-content">
                         <h2 class="card-heading">Технокряк</h2>
@@ -68,7 +76,7 @@
                     <li class="card-images">
                         <article class="card">
                            <div class="card-thumb">
-                            <img src="./images/pic2.jpg" alt="img" width="370" height="294">
+                            <img class="card-shadow" src="./images/pic2.jpg" alt="img" width="370" height="294">
                           </div>
                          <div class="card-content">
                         <h2 class="card-heading">Постер New Orlean vs Golden Star</h2>
@@ -80,7 +88,7 @@
                     <li class="card-images">
                         <article class="card">
                            <div class="card-thumb">
-                            <img src="./images/pic3.jpg" alt="img" width="370" height="294">
+                            <img class="card-shadow" src="./images/pic3.jpg" alt="img" width="370" height="294">
                           </div>
                          <div class="card-content">
                         <h2 class="card-heading">Ресторан Seafood</h2>
@@ -92,7 +100,7 @@
                     <li class="card-images">
                         <article class="card">
                            <div class="card-thumb">
-                            <img src="./images/pic4.jpg" alt="img" width="370" height="294">
+                            <img class="card-shadow" src="./images/pic4.jpg" alt="img" width="370" height="294">
                           </div>
                          <div class="card-content">
                         <h2 class="card-heading">Проект Prime</h2>
@@ -104,7 +112,7 @@
                     <li class="card-images">
                         <article class="card">
                            <div class="card-thumb">
-                            <img src="./images/pic5.jpg" alt="img" width="370" height="294">
+                            <img class="card-shadow" src="./images/pic5.jpg" alt="img" width="370" height="294">
                           </div>
                          <div class="card-content">
                         <h2 class="card-heading">Проект Boxes</h2>
@@ -116,7 +124,7 @@
                     <li class="card-images">
                         <article class="card">
                            <div class="card-thumb">
-                            <img src="./images/pic6.jpg" alt="img" width="370" height="294">
+                            <img class="card-shadow" src="./images/pic6.jpg" alt="img" width="370" height="294">
                           </div>
                          <div class="card-content">
                         <h2 class="card-heading">Inspiration has no Borders</h2>
@@ -128,7 +136,7 @@
                     <li class="card-images">
                         <article class="card">
                            <div class="card-thumb">
-                            <img src="./images/pic7.jpg" alt="img" width="370" height="294">
+                            <img class="card-shadow" src="./images/pic7.jpg" alt="img" width="370" height="294">
                           </div>
                          <div class="card-content">
                         <h2 class="card-heading">Издание Limited Edition</h2>
@@ -140,7 +148,7 @@
                     <li class="card-images">
                         <article class="card">
                            <div class="card-thumb">
-                            <img src="./images/pic8.jpg" alt="img" width="370" height="294">
+                            <img class="card-shadow" src="./images/pic8.jpg" alt="img" width="370" height="294">
                           </div>
                          <div class="card-content">
                         <h2 class="card-heading">Проект LAB</h2>
@@ -151,7 +159,7 @@
                     <li class="card-images">
                         <article class="card">
                            <div class="card-thumb">
-                            <img src="./images/pic9.jpg" alt="img" width="370" height="294">
+                            <img class="card-shadow" src="./images/pic9.jpg" alt="img" width="370" height="294">
                           </div>
                          <div class="card-content">
                         <h2 class="card-heading">Growing Business</h2>
@@ -168,18 +176,42 @@
 
     <footer class="footer">
         <div class="container">
-            <address>
-            <a href="index.html" class="logo">Web<span class="logo-color-white">Studio</span></a>
+            <div>
+                <address>
+                    <a href="./index.html" class="logo">Web<span class="logo-color-white">Studio</span></a>
             
-               
-            
+                
+                    <ul class="contacts-footer ">
+                    <li class="adress"><p>г. Киев, пр-т Леси Украинки, 26 </p></li>   
+                    <li><a  href="mailto info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a href="tel +380961111111">+380961111111</a></li>
+                    
+                    </ul>
+                </address> 
+            </div>   
+                    <div >
+                        <h3 class="join-us" >Присоединяйтесь</h3></li>
+                         <ul class="footer-box">
+                           <svg class="footer-icon-svg">
+                                <use href='./images/sprite.svg#instagram'></use>
+                            </svg></li>
+                            
+                            <li><svg class="footer-icon-svg">
+                                <use href='./images/sprite.svg#twitter'></use>
+                            </svg></li>
+                        
+                            <li><svg class="footer-icon-svg "> 
+                                <use href='./images/sprite.svg#facebook'></use>
 
-            <ul class="contacts-footer">
-                <li class="adress"><p >г. Киев, пр-т Леси Украинки, 26 </p> </li>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+380961111111</a></li>
-            </ul>
-            </address>
+                            </svg></li>
+
+                            <li> <svg class="footer-icon-svg">
+                                <use href='./images/sprite.svg#linkedin'></use>
+                            </svg></li>
+                        </ul> 
+                    </div>    
+                   
+                 
         </div>
     </footer>
 

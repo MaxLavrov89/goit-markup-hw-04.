@@ -96,30 +96,26 @@
   .links li:last-child a {
     margin-right: 0;
   }
-  .contacts li a {
-    margin: 0 0 0 50px;
-  
-    color: var(--sec-color);
-  }
-  .contacts li:first-child a {
-    margin-left: auto;
+
+  .contacts li:nth-child(2) a {
+    margin-left: 0;
+    margin-right:30px;
 }
-.mail::before {
-  content: "";
-  display: inline-block;
-  background-image: url("../images/envelope.png");
+.sprite-icon-envelope{
+  margin-left:auto;
+  margin-right: 10px;
   width: 16px;
   height: 12px;
-  margin-right: 10px;
+
 }
-.telefon::before {
-  content: "";
-  display: inline-block;
-  background-image: url("../images/vector.png");
+.sprite-icon-phone {
+  margin-left:30px;
+  margin-right: 10px;
   width: 10px;
   height: 16px;
-  margin-right: 10px;
+
 }
+
   /* HERO-BLOCK */
   .hero {
     max-width: 1600px;
@@ -160,6 +156,7 @@
   .hero-button:hover {
     background: #1c8be6;
   }
+  /*Преймущества*/
   .section-advantage {
     padding: 94px 0 0 0;
     margin-top: 0px;
@@ -175,57 +172,16 @@
     text-transform: uppercase;
     margin-bottom: 10px;
   }
-  .section-item>.radar::before {
-    content: "";
-    display: block;
-    background-image:url(../images/radar.svg);
-    width: 270px;
-    height: 120px;
-    background-size: 70px;
-    background-repeat:no-repeat;
-    background-position: center;
-    
-    background-color: #F5F4FA;
+  .sprite-icon-advantage {
+    margin-top: 25px;
     margin-bottom: 50px;
-  }
-  .section-item>.clock::before{
-    content: "";
-    display: block;
-    background-image:url(../images/clock.svg);
-    width: 270px;
-    height: 120px;
-    background-size: 70px;
-    background-repeat:no-repeat;
-    background-position: center;
-    
-    background-color: #F5F4FA;
-    margin-bottom: 50px;
-  }
-  .section-item>.computer::before{
-    content: "";
-    display: block;
-    background-image:url(../images/computer.svg);
-    width: 270px;
-    height: 120px;
-    background-size: 70px;
-    background-repeat:no-repeat;
-    background-position: center;
-    background-color: #F5F4FA;
-    margin-bottom: 50px;
-  }
-  .section-item>.astronaut::before{
-    content: "";
-    display: block;
-    background-image:url(../images/astronaut.svg);
-    width: 270px;
-    height: 120px;
-    background-size: 70px;
-    background-repeat:no-repeat;
-    background-position: center;
-    background-color: #F5F4FA;
-    margin-bottom: 50px;
-    ;
-  }
+    height: 70px;
+    background-color: 
+    rgba(245, 244, 250, 1)
+    }
+
+   
+
 
   .section-button {
     font-weight: 500;
@@ -256,9 +212,11 @@
     margin: 0;
     list-style: none;
     display: flex;
+    justify-content: center;
   }
   .section-info > .section-item {
-    flex-basis: calc(100% / 4);
+    
+  flex-basis: calc(100% / 4);
   }
   .about-us {
     display: flex;
@@ -301,6 +259,9 @@
   .sprite-icon:hover {
     fill: #1c8be6;
   }
+  .sprite-box {
+    display: flex;
+  }
   .container {
     padding: 0 15px;
     width: 1200px;
@@ -331,7 +292,7 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
+    margin-top:-30px;
     margin-left: -30px;
     align-items: center;
     justify-content: center;
@@ -360,16 +321,8 @@
     margin-left: 24px;
     margin-top: 20px;
   }
-  .contacts-footer li a {
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
-  .contacts-footer {
-    
-    padding: 0px;
+  .card-shadow:hover {
+    box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.75);;
   }
   /* Клиенты*/
   .team-title-clients{
@@ -383,79 +336,30 @@
 
   .clients{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     
 }
-.clients-first {
+.sprite-icon-clients{
   display: block;
   width: 170px;
   height: 92px;
-  border: 1px solid gray;
-  background-image: url(../images/сlient1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: 0;
+  border: 1px solid gray; 
 }
-.clients-second {
-  display: block;
-  width: 170px;
-  height: 92px;
-  border: 1px solid gray;
-  background-image: url(../images/client2.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: 30px;
-}
-.clients-third {
-  display: block;
-  width: 170px;
-  height: 92px;
-  border: 1px solid gray;
-  background-image: url(../images/client3.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: 30px;
-}
-.clients-fourth {
-  display: block;
-  width: 170px;
-  height: 92px;
-  border: 1px solid gray;
-  background-image: url(../images/client4.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: 30px;
-}
-.clients-fifth {
-  display: block;
-  width: 170px;
-  height: 92px;
-  border: 1px solid gray;
-  background-image: url(../images/client5.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: 20px;
- 
-}
-.clients-sixth {
-  display: block;
-  width: 170px;
-  height: 92px;
-  border: 1px solid gray;
-  background-image: url(../images/client6.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-left: 20px;
-}
+
+/*ПОДВАЛ*/
   .footer {
+    display: flex;
     background-color: #2f303a;
     padding: 60px 0;
     max-height: 252px;
     max-width: 100%;
   }
-  .footer-icon {
-    display: inline-flex;
+  .footer>.container{
+    display: flex;
+  }
+  .footer-icon-svg {
+    display: flex;
     align-items: center;
     justify-content: center;
     fill: #ffffff;
@@ -463,19 +367,41 @@
     height: 20px;
     margin-right: 24px;
   }
-.footer-icon:hover {
+.footer-icon-svg:hover {
   fill: #1c8be6;
 }
+.footer-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 70px;
+  }
+  .contacts-footer li a {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .contacts-footer {
+    
+    padding: 0px;
+  }
   .adress > p {
     color: #ffffff;
   }
 
     .join-us  {
       text-align: center;
-      display: flex;
+      display: inline-block;
       color: #ffffff;
       align-items: center;
-      
+      justify-content:center;
+      font-size: 14px;
+      line-height: 16.4px;
+      text-transform: uppercase;
+      margin-left: 110px;
+      margin-top: 10px;
     }
   
    
