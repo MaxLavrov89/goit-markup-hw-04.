@@ -77,7 +77,7 @@
   header > .container {
     max-height: 80px;
   }
-  .contacts li a,
+  
   .links li a {
     margin-right: 50px;
     display: inline-block;
@@ -87,8 +87,17 @@
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
   }
-  .contacts li a:hover,
-  .contacts li a:focus,
+  .contacts li a{
+    display: inline-block;
+    padding: 30.5px 0;
+    color: #757575;
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em; 
+  }
+
+  /* .contacts li a:hover,
+  .contacts li a:focus, */
   .links li a:hover,
   .links li a:focus {
     color: var(--act-color);
@@ -115,12 +124,16 @@
   width: 10px;
   height: 16px;
 }
-.sprite-icon-envelope:hover{
+.contacts .contacts-mail:hover
+{
  stroke: #1c8be6;
+ color: #1c8be6;
 }
 .sprite-icon-phone:hover {
   stroke: #1c8be6
 }
+
+
   /* HERO-BLOCK */
   .hero {
     max-width: 1600px;
@@ -178,14 +191,22 @@
     margin-bottom: 10px;
   }
   .sprite-icon-advantage {
-    margin-top: 25px;
-    margin-bottom: 50px;
+  
     height: 70px;
-    background-color: 
-    rgba(245, 244, 250, 1)
+    
     }
-
-   
+    .wrap-icon{
+      display: block;
+      width: 270px;
+      height: 120px;
+      padding: 25px 0;
+      margin-right: 30px;
+      margin-left: 10px];
+      margin-bottom: 30px;
+      background-color: 
+    rgba(245, 244, 250, 1);
+     
+    }
 
 
   .section-button {
@@ -220,13 +241,16 @@
     justify-content: center;
   }
   .section-info > .section-item {
-    
+   display: block; 
+   justify-content: center;
   flex-basis: calc(100% / 4);
   }
   .about-us {
     display: flex;
-    margin-top: 50px;
+    padding-left: 0px;
+    
   }
+ 
   .team-fotos {
     margin-right: 30px;
     border-bottom-left-radius: 4px;
@@ -268,7 +292,7 @@
     display: flex;
   }
   .container {
-    padding: 0 15px;
+    padding: 0 ;
     width: 1200px;
     border: 1px solid red;
     margin-left: auto;
