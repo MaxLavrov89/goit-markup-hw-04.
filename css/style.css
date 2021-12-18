@@ -104,21 +104,17 @@
   .links li:last-child a {
     margin-right: 0;
   }
-  .sprite-icon-envelope:hover+.contacts-mail
-  {
-   color: #1c8be6; 
-   stroke: #1c8be6;
-  }
-  .sprite-icon-envelope:hover,
-  .contacts-mail
-  {
-    color: #1c8be6; 
+.sprite-icon-envelope:hover{
+  stroke: #1c8be6;
+}
+.contacts-mail:hover{
+  color: #1c8be6; 
+}
+  .contacts-mail:hover
+  .sprite-icon-envelope{
     stroke: #1c8be6;
   }
-  .contacts-mail:hover{
-    color: #1c8be6; 
-  }
-  .sprite-icon-phone:hover+.telefon {
+  .telefon:hover .sprite-icon-phone{
     stroke: #1c8be6;
     color:#1c8be6;
   }
@@ -206,24 +202,21 @@
     margin-bottom: 10px;
   }
   .sprite-icon-advantage {
-  
     height: 70px;
-    
     }
-    .wrap-icon{
-      display: block;
+  .section-items li:not(:last-child) {
+  margin-right: 30px;
+}
+ .wrap-icon{
+      display: flex;
+      justify-content: center;
       width: 270px;
       height: 120px;
       padding: 25px 0;
-      margin-right: 30px;
-      margin-left: 10px];
       margin-bottom: 30px;
       background-color: 
     rgba(245, 244, 250, 1);
-     
-    }
-
-
+     }
   .section-button {
     font-weight: 500;
     font-size: 16px;
@@ -255,11 +248,7 @@
     display: flex;
     justify-content: center;
   }
-  .section-info > .section-item {
-   display: block; 
-   justify-content: center;
-  flex-basis: calc(100% / 4);
-  }
+ 
   .about-us {
     display: flex;
     padding-left: 0px;
@@ -270,13 +259,18 @@
     margin-right: 30px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
+    background-color: #ffffff;
+  }
+  .team-fotos:hover {
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 1px 1px rgba(0, 0, 0,  0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   }
   .team {
     display: flex;
     text-align: center;
-    background-color: #ffffff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-      0px 1px 1px rgba(0, 0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0, 0.2);
+    padding-left: 0px;
+   
+ 
   }
   .team-title {
     font-weight: bold;
@@ -287,10 +281,11 @@
   .team-box {
     background-color: #f5f4fa;
   }
-  .team-names {
-    margin: 30px 0 10px;
+  .team-wrapper {
+    padding: 30px 0;
   }
   .team-workers {
+    margin-top: 10px;
     margin-bottom: 30px;
   }
  
@@ -403,10 +398,18 @@
     
 }
 .sprite-icon-clients{
-  display: block;
+  display: flex;
+  width: 106px;
+  height: 60px;
+  
+}
+.sprite-boarder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
-  border: 1px solid gray; 
+  border: solid 1px #AFB1B8;
 }
 
 /*ПОДВАЛ*/

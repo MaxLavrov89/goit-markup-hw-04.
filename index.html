@@ -30,17 +30,17 @@
             <ul class="contacts">
                 
                     <li class="contacts-item">
-                        <svg class="sprite-icon-envelope ">
-                        <use href='./images/sprite-next.svg#icon-envelope'></use>
-                        </svg>
-                        <a class="contacts-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        
+                        <a class="contacts-mail" href="mailto:info@devstudio.com" ><svg class="sprite-icon-envelope ">
+                            <use href='./images/sprite-next.svg#icon-envelope'></use>
+                            </svg> info@devstudio.com</a>
                     </li>
                
                     <li >
-                            <svg class="sprite-icon-phone">
-                            <use href='./images/sprite-next.svg#icon-phone'></use>
-                            </svg>
-                            <a class="telefon" href="tel:+380961111111">+380961111111</a>
+                           
+                            <a class="telefon" href="tel:+380961111111">  <svg class="sprite-icon-phone">
+                                <use href='./images/sprite-next.svg#icon-phone'></use>
+                                </svg>+380961111111</a>
                     </li>
                 
             </ul>
@@ -65,60 +65,46 @@
                 <h2 class="hidden-elem">Портфолио</h2>
                 <div >
                     <ul class="section-info">
-                        <li>
+                        <li class="section-items">
                             <div class="wrap-icon">
                             <svg class="sprite-icon-advantage">
                             <use href='./images/sprite-next.svg#icon-radar'></use>
                             </svg> 
                             </div>
+                            <h3 class="section-text">Внимание к деталям</h3>
+                            <p>Идейные соображения,а также начало повседневной работы по формированию позиции.</p>
                        </li> 
                       
-                        <li> 
+                        <li class="section-items"> 
                             <div class="wrap-icon">
                                 <svg class="sprite-icon-advantage">
                                 <use href='./images/sprite-next.svg#icon-clock'></use>
                                 </svg> 
                              </div>
+                             <h3 class="section-text ">Пунктуальность</h3>
+                             <p>Задача организации,в особенности же рамки и место обучения кадров влечет за собой.</p>
                         </li>
-                        <li>
+                        <li class="section-items">
                         <div class="wrap-icon">
                                 <svg class="sprite-icon-advantage">
                                 <use href='./images/sprite-next.svg#icon-computer'></use>
                                 </svg>
-                        </div>
+                              </div>
+                        <h3 class="section-text ">Планирование</h3>
+                        <p>Равным образом консультация с широким активом в значительной степени обуславливает</p>
                         </li>
-                        <li>
+                        <li class="section-items">
                             <div class="wrap-icon"> 
                                     <svg class="sprite-icon-advantage">
                                     <use href='./images/sprite-next.svg#icon-astronaut'></use>
                                     </svg>
-                            </div> 
+                            </div>
+                            <h3 class="section-text ">Современные технологии</h3>
+                            <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p> 
                          </li> 
                 
                     </ul>
-                    <ul class="section-info">
-                       <li class="section-item ">
-                            <h3 class="section-text">Внимание к деталям</h3>
-                            <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                        </li>
-
-                        <li class="section-item ">
-                            <h3 class="section-text clock">Пунктуальность</h3>
-                            <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                        </li>
-
-                        <li class="section-item ">
-                            
-                            <h3 class="section-text computer" >Планирование</h3>
-                            <p>Равным образом консультация с широким активом в значительной степени обуславливает</p>
-                        </li>
-                        
-                        <li class="section-item ">
-                        
-                            <h3 class="section-text astronaut">Современные технологии</h3>
-                            <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                        </li>
-                </ul>
+                   
                 </div>
             </div>
         </section>
@@ -146,8 +132,9 @@
 
                     <li class="team-fotos" >
                         <img src="./images/img 1.jpg" alt="Игорь Демьяненко" width="270" height="260">
-                        <h3 class="team-names">Игорь Демьяненко</h3>
-                        <p class="team-workers">Product Designer</p>
+                       <div class="team-wrapper">
+                            <h3 class="team-names">Игорь Демьяненко</h3>
+                            <p class="team-workers">Product Designer</p>
                         <ul class="sprite-box">
                         <li>
                             <a href="#" class="icon-change"><svg>
@@ -162,14 +149,15 @@
                         <li><a href="#" class="icon-change"><svg>
                             <use href='./images/sprite.svg#linkedin'></use>
                           </svg></a></li>
-                            </ul>
+                            </ul></div>
                     </li>
                      
                    
                     <li class="team-fotos" >
                         <img  src="./images/img 2.jpg" alt="Ольга Репина" width="270" height="260">
-                        <h3 class="team-names">Ольга Репина</h3>
-                        <p class="team-workers">Frontend Developer</p>
+                        <div class="team-wrapper">
+                            <h3 class="team-names">Ольга Репина</h3>
+                            <p class="team-workers">Frontend Developer</p>
                         <ul class="sprite-box">
                         <li> <a href="#" class="icon-change"><svg>
                             <use href='./images/sprite.svg#instagram' aria-label="Instagram"></use>
@@ -183,13 +171,14 @@
                         <li><a href="#" class="icon-change" aria-label="Linkedin"><svg>
                             <use href='./images/sprite.svg#linkedin'></use>
                           </svg></a></li>
-                        </ul>
+                        </ul></div>
                     </li>
                     
                     <li class="team-fotos" >
                         <img  src="./images/img 3.jpg" alt="Николай Тарасов" width="270" height="260">
-                        <h3 class="team-names">Николай Тарасов</h3>
-                        <p class="team-workers">Marketing</p>
+                        <div class="team-wrapper">
+                            <h3 class="team-names">Николай Тарасов</h3>
+                            <p class="team-workers">Marketing</p>
                         <ul class="sprite-box">
                             <li><a href="#" class="icon-change" aria-label="Instagram" ><svg>
                                 <use href='./images/sprite.svg#instagram'></use>
@@ -204,12 +193,14 @@
                             <use href='./images/sprite.svg#linkedin' aria-label="Linkedin"></use>
                           </svg></a></li>
                         </ul>
+                    </div>
                     </li>
                     
                     <li class="team-fotos" >
                         <img  src="./images/img 4.jpg" alt="Михаил Ермаков" width="270" height="260">
-                        <h3 class="team-names">Михаил Ермаков</h3>
-                        <p class="team-workers">UI Designer</p>
+                        <div class="team-wrapper">
+                            <h3 class="team-names">Михаил Ермаков</h3>
+                            <p class="team-workers">UI Designer</p>
                         <ul class="sprite-box">
                            <li> <a href="#" class="icon-change" aria-label="Instagram"><svg>
                                 <use href='./images/sprite.svg#instagram'></use>
@@ -224,6 +215,7 @@
                                 <use href='./images/sprite.svg#linkedin'></use>
                               </svg></a></li>
                         </ul>
+                    </div>
                     </li>
                 </ul>
                 
@@ -235,24 +227,24 @@
             <div>
           <h2 class="team-title-clients">Постоянные клиенты</h2>
             <ul class="clients">
-             <li><svg class="sprite-icon-clients">
+             <li><div class="sprite-boarder"><svg class="sprite-icon-clients">
                 <use href='./images/sprite-next.svg#icon-client1'></use>
-                </svg></li>
-             <li><svg class="sprite-icon-clients">
+                </svg></div></li>
+             <li><div class="sprite-boarder"><svg class="sprite-icon-clients">
                 <use href='./images/sprite-next.svg#icon-client2'></use>
-                </svg></li>
-             <li><svg class="sprite-icon-clients">
+                </svg></div></li>
+             <li><div class="sprite-boarder"><svg class="sprite-icon-clients">
                 <use href='./images/sprite-next.svg#icon-client3'></use>
-                </svg></li>
-             <li><svg class="sprite-icon-clients">
+                </svg></div></li>
+             <li><div class="sprite-boarder"><svg class="sprite-icon-clients">
                 <use href='./images/sprite-next.svg#icon-client4'></use>
-                </svg></li>
-             <li><svg class="sprite-icon-clients">
+                </svg></div></li>
+             <li><div class="sprite-boarder"><svg class="sprite-icon-clients">
                 <use href='./images/sprite-next.svg#icon-client5'></use>
-                </svg></li>
-             <li><svg class="sprite-icon-clients">
+                </svg></div></li>
+             <li><div class="sprite-boarder"><svg class="sprite-icon-clients">
                 <use href='./images/sprite-next.svg#icon-client6'></use>
-                </svg></li>
+                </svg></div></li>
          </ul>
        
         </div>
