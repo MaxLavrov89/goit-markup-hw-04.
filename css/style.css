@@ -401,6 +401,15 @@
     border: solid 1px #AFB1B8; 
     margin-right: 15px;
 }
+.clients >li:hover
+ {
+  fill: #1c8be6;
+  border:solid 1px #1c8be6 ;
+}
+.sprite-icon-clients:hover{
+  stroke: #1c8be6;
+  fill: #1c8be6;
+  }
 .sprite-icon-clients{
   display: flex;
   width: 106px;
